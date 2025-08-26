@@ -8,8 +8,18 @@
 
     //ENTRADA
 
+    const n1 = Number(prompt(`Insira um número:`));
+    const n2 = Number(prompt(`Insira outro número:`));
+    const n3 = Number(prompt(`Insira outro número:`));
 
     //PROCESSAMENTO
+
+    const decrescente = [n1, n2, n3]
+    const decrescente2 = decrescente.sort((a, b) => b-a);
+
+    alert(`${decrescente.join(" - ")}`);
+
+
 
 
     //SAÍDA

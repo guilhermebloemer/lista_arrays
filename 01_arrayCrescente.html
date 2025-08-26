@@ -7,12 +7,28 @@
     */
 
     //ENTRADA
-    let num = prompt(`Insira dois números:`);
-    
+    const n1 = Number(prompt(`Insira um número:`));
+    const n2 = Number(prompt(`Insira outro número:`));
+
+    const crescente = [];
 
     //PROCESSAMENTO
 
+    if  (n1 < n2) {
+        crescente.push(n1);
+        crescente.push(n2);
+    }
+    else if (n2 < n1) {
+        crescente.push(n2);
+        crescente.push(n1);
+    }
+    else {
+        crescente.push(n1);
+        crescente.push(n2);
+    }
 
+    const resultado = crescente.join(" - ");
+    alert(resultado);
     //SAÍDA
 
 </script>
