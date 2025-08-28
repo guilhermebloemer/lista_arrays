@@ -9,11 +9,21 @@
     */
 
     //ENTRADA
-
+    const palavra = prompt("Informe UMA palavra:");
+    const letra = prompt("Informe uma letra que você deseja encontrar nessa palavra:");
 
     //PROCESSAMENTO
 
+    let existe = palavra.indexOf(letra)
 
+    if (existe < 0) {
+        alert(`Essa letra não existe na palavra. Tente outra!`);
+    }
+    else if (existe >= 0) {
+        alert(`A primeira posição da letra na palavra é: ${existe + 1}`);
+    }
+    else
+        alert(`ERRO!`)
     //SAÍDA
 
 </script>
